@@ -1,0 +1,22 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user
+        </mat-icon>
+        <div>
+            <button mat-button color="primary">
+                <span>Technical Babaji</span>
+            </button>
+        </div>
+        <div>
+
+        </div>
+        <span class="example-spacer"></span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row *ngIf="deviceXs">
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user
+        </mat-icon>
+        <span>Second Line</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
