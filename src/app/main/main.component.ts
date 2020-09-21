@@ -74,7 +74,6 @@ export class MainComponent implements OnInit {
         }
       }
     )
-    console.log("this.cardDetails",this.cardDetails);
   }
 
 }
