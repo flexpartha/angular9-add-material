@@ -1,22 +1,39 @@
 <mat-toolbar>
-    <mat-toolbar-row>
-        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user
-        </mat-icon>
-        <div>
+    <mat-toolbar-row class="gap-between">
+        <div class="navItems-logo">
             <button mat-button color="primary">
-                <span>Technical Babaji</span>
+                <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+                <span class="logo">Technical Babaji</span>
+            </button>
+            <div *ngIf="!deviceXs">
+                <button mat-button color="primary">
+                    Home
+                </button>
+                <button mat-button color="primary"> 
+                    Contact Us
+                </button>
+                <button mat-button color="primary">
+                    About Us
+                </button>
+            </div>
+        </div>
+        <div>
+            <button mat-icon-button>
+                <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+                <span *ngIf="!deviceXs">Menu</span>
             </button>
         </div>
-        <div>
-
-        </div>
-        <span class="example-spacer"></span>
     </mat-toolbar-row>
 
-    <mat-toolbar-row *ngIf="deviceXs">
-        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user
-        </mat-icon>
-        <span>Second Line</span>
-        <span class="example-spacer"></span>
+    <mat-toolbar-row *ngIf="deviceXs"  class="navItem-space">
+            <button mat-button color="primary">
+                Home
+            </button>
+            <button mat-button color="primary"> 
+                Contact Us
+            </button>
+            <button mat-button color="primary">
+                About Us
+            </button>
     </mat-toolbar-row>
 </mat-toolbar>

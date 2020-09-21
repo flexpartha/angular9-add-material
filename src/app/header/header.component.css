@@ -1,0 +1,21 @@
+.gap-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    padding: 0px 5px;
+    font-size: 20px;
+}
+
+.navItems-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.navItem-space{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
