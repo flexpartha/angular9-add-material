@@ -9,11 +9,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {MatIconModule} from '@angular/material/icon';
 import { MainComponent } from './main/main.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
