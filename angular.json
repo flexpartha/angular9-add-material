@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "angular9-add-material"
+  "defaultProject": "angular9-add-material",
+  "cli": {
+    "analytics": false
+  }
 }
